@@ -30,15 +30,29 @@ My pipeline consisted of 5 steps.
              set `low_threshold = 50` and `high_threshold = 150`.
 	     
 **Step 4:**  then define a four sided polygon to mask image, this is the region of interest.
-             set `vertices = np.array([[(30,imshape[0]),(418, 325), (550, 325), (930,imshape[0])]], dtype=np.int32)`, 
+
+             set :
+	     `vertices = np.array([[(30,imshape[0]),(418, 325), (550, 325), (930,imshape[0])]], dtype=np.int32)`, 
+	     
 	     which is our  interest region. and plot the interest region with line.
 	     
 **Step 5:**  then use hough transform method to to detect lines in an image, and carefully tune the parameters to fit our aim.
+
 	     for images test, set: 
-	     `rho = 2`, `theta = np.pi/180`, `threshold = 15`, `min_line_len = 40`, `max_line_gap = 8`, this get images very good effect.
+	     `rho = 2`, 
+	     `theta = np.pi/180`, 
+	     `threshold = 15`, 
+	     `min_line_len = 40`, 
+	     `max_line_gap = 8`, 
+	     this get images very good effect.
 	     
 	     for video test, set:
-	     `rho = 2`, `theta = np.pi/180`, `threshold = 17`, `min_line_len = 41`, `max_line_gap = 15`, this could get good video handling result.
+	     `rho = 2`, 
+	     `theta = np.pi/180`, 
+	     `threshold = 17`, 
+	     `min_line_len = 41`, 
+	     `max_line_gap = 15`, 
+	     this could get good video handling result.
 	     
 **Step 6:**  and finally draw the lines on the image.
 
@@ -49,9 +63,9 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 **1:**  add "vertices" parameter into the function prototype, in order to automated call the values of region which i defined before, no need to modify the value by hand.
 
-**2:**  define left_lines array and right_lines array to store the left lines and right lines. The two sides lines are separated by their slope, slope = (y2-y1)/(x2-x1), so if slope>0, it is right line, otherwise, if slope<0, it is left line, and according to "b = y1 - slope * x1", calculate b in the meantime, then put all left lines or right lines into array, and then calculate their average by np.mean() method, by this way, we can get average "slope" and "b" parameter, then we can get a line by fomular "y=slope*x + b", this is what we want. also, y is certainty according to our mask region of interest, max y is the bottom of image[0], mix y is the top of image[0], so as x. 
+**2:**  define left_lines array and right_lines array to store the left lines and right lines. The two sides lines are separated by their slope, slope = (y2-y1)/(x2-x1), so if slope>0, it is right line, otherwise, if slope<0, it is left line, and according to `b = y1 - slope * x1`, calculate b in the meantime, then put all left lines or right lines into array, and then calculate their average by np.mean() method, by this way, we can get average `slope` and `b` parameter, then we can get a line by fomular `y=slope*x + b`, this is what we want. also, y is certainty according to our mask region of interest, max y is the bottom of image[0], mix y is the top of image[0], so as x. 
 	
-**3:**  then use cv2.line() to draw the line according to above x,y end point data.
+**3:**  then use `cv2.line()` to draw the line according to above x,y end point data.
 
 **4:**  show image or video to see the output is correct or not.
 
