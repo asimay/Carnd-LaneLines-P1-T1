@@ -30,7 +30,7 @@ My pipeline consisted of 5 steps.
              and plot the interest region with line.
 **Step 5:**  then use hough transform method to to detect lines in an image, and carefully tune the parameters to fit our aim.
 			 for images test, set: 
-			 `rho = 2`, `theta = np.pi/180`, `threshold = 13`, `min_line_len = 40`, `max_line_gap = 6`, this get images very good effect.
+			 `rho = 2`, `theta = np.pi/180`, `threshold = 15`, `min_line_len = 40`, `max_line_gap = 8`, this get images very good effect.
 			 for video test, set:
 			 `rho = 2`, `theta = np.pi/180`, `threshold = 17`, `min_line_len = 41`, `max_line_gap = 15`, this could get good video handling result.
 **Step 6:**  and finally draw the lines on the image.
