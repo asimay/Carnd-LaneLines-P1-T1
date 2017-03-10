@@ -45,3 +45,10 @@ then use hough transform method to to detect lines in an image, and carefully tu
 **Step 6:**  
 
 and finally draw the lines on the image.
+
+
+The Detailed Information
+---
+Please see writeup_template.md file.
+Thanks.
+all by asimay_y@126.com
