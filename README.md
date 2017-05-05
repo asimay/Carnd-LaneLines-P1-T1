@@ -1,7 +1,8 @@
 "# Carnd-Term1" 
 #**Finding Lane Lines on the Road** 
 
-[image1]: ./examples/solidYellowLeft.png "solidYellowLeft.png"
+[image1]: ./examples/solidYellowLeft.png "solidYellowLeft.png"  
+[image2]: ./examples/solidWhiteCurve.png "solidWhiteCurve.png.png"
 
 Overview
 ---
@@ -49,6 +50,7 @@ then use hough transform method to to detect lines in an image, and carefully tu
 and finally draw the lines on the image.
 
 ![car_line_draw][image1]
+![car_line_draw][image2]
 
 The Detailed Information
 ---
