@@ -60,18 +60,23 @@ and finally draw the lines on the image.
 The Modified Information
 ---
 1. RGB -> HLS color space to extract lane line:
+
 ![HLS space][image3]
 
 Canny image:
+
 ![cany space][image4]
 
 region of interest image:
+
 ![region of interest space][image5]
 
 hough line image:
+
 ![hough line][image6]
 
 and then use machine learning to polyfit the line, polyfit image:
+
 ![polyfit line][image7]
 
 
