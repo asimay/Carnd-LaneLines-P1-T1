@@ -8,6 +8,7 @@
 [image5]: ./examples/reg.png "reg"
 [image6]: ./examples/houghline.png "houghline"
 [image7]: ./examples/polyfit1.png "polyfit1"
+[image8]: ./examples/yellow_final.gif "yellow_final"
 
 Overview
 ---
@@ -79,6 +80,9 @@ and then use machine learning to polyfit the line, polyfit image:
 
 ![polyfit line][image7]
 
+final effect:
+
+![final][image8]
 
 The Detailed Information
 ---
