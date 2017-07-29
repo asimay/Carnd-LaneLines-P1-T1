@@ -3,6 +3,11 @@
 
 [image1]: ./examples/solidYellowLeft.png "solidYellowLeft.png"  
 [image2]: ./examples/solidWhiteCurve.png "solidWhiteCurve.png.png"
+[image3]: ./examples/hls.png "hls.png"
+[image4]: ./examples/canny.png "canny"
+[image5]: ./examples/reg.png "reg"
+[image6]: ./examples/houghline.png "houghline"
+[image7]: ./examples/polyfit1.png "polyfit1"
 
 Overview
 ---
@@ -51,6 +56,24 @@ and finally draw the lines on the image.
 
 ![car_line_draw][image1]
 ![car_line_draw][image2]
+
+The Modified Information
+---
+1. RGB -> HLS color space to extract lane line:
+![HLS space][image3]
+
+Canny image:
+![cany space][image4]
+
+region of interest image:
+![region of interest space][image5]
+
+hough line image:
+![hough line][image6]
+
+and then use machine learning to polyfit the line, polyfit image:
+![polyfit line][image7]
+
 
 The Detailed Information
 ---
