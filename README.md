@@ -1,7 +1,7 @@
 "# Carnd-Term1" 
 #**Finding Lane Lines on the Road** 
 
-[image1]: ./examples/solidYellowLeft.png "solidYellowLeft.png"  
+[image1]: examples/solidYellowLeft.png "solidYellowLeft.png"  
 [image2]: ./examples/solidWhiteCurve.png "solidWhiteCurve.png.png"
 [image3]: ./examples/hls.png "hls.png"
 [image4]: ./examples/canny.png "canny"
